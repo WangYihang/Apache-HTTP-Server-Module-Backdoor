@@ -3,7 +3,8 @@ Apache_HTTP_Server_Module_Backdoor
 
 Installation:
 ```
-apxs -i -a -c mod_backdoor.c && service apache2 restart
+# switch to root user
+apt install apache2-dev && apxs -i -a -c mod_backdoor.c && service apache2 restart
 ```
 
 Usage:
