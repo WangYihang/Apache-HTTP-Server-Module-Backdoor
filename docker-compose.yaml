@@ -1,0 +1,5 @@
+services:
+  httpd:
+    build: .
+    ports:
+      - "4444:80"

@@ -1,14 +1,16 @@
-Apache_HTTP_Server_Module_Backdoor
----
+# Backdoor for Apache HTTP Server
 
-Installation:
-```
-# switch to root user
-apt install apache2-dev && apxs -i -a -c mod_backdoor.c && service apache2 restart
+## Getting Started
+
+Starting the exploited demo server in Docker
+
+```bash
+docker compose up
 ```
 
-Usage:
-```
+Run the exploit script
+
+```bash
 python exploit.py [HOST] [PORT]
 ```
 
