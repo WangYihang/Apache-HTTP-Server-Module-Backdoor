@@ -42,4 +42,3 @@ restart:
 	$(APACHECTL) restart
 stop:
 	$(APACHECTL) stop
-
