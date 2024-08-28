@@ -5,13 +5,20 @@
 Starting the exploited demo server in Docker
 
 ```bash
-docker compose up
+docker run \
+  --rm \
+  --interactive \
+  --detach \
+  --tty \
+  -p \
+  4444:80 \
+  ghcr.io/wangyihang/apache-http-server-module-backdoor:master
 ```
 
 Run the exploit script
 
 ```bash
-python exploit.py [HOST] [PORT]
+python exploit.py 127.0.0.1 4444
 ```
 
 Example:
